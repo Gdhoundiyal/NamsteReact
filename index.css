@@ -48,3 +48,13 @@ li {
   padding: 13px;
   grid-template-columns: auto auto auto auto auto auto;
 }
+
+.filter-btn {
+  margin: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+
+  font-family: "Times New Roman", Times, serif;
+}

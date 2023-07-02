@@ -18,4 +18,35 @@
 
 # don't use index as a key in react its recommended
 
-# 2 type of export 1= default export 2= named export
+# 2 type of export 1= default export 2= named export (use named export if you have to export multiple things)
+
+# WHY react is fast = it can do faster dom manipulation,
+
+# Hooks = its a normal js utilities function it has some super powers
+
+there is 2 hooks
+
+- useState() - Superpowerful react variables
+  whenever a state variable updates react rerenders the comoponent.
+
+-useEffect( () => {}, [])- useeffect callback function is called after body is rendered
+
+# fetch() method = it fetch data from api
+
+react uses Reaconciliation Algorithm
+react fiber architechture ?
+
+why react fast = beacuse it has virtual dom it can do efficient dom manipulation
+
+# virtual DOM
+
+virtual dom is a representation of actual dom
+
+# monolith architechture
+
+very big project earlier use this method
+
+# how application fetch data from backend
+
+1= load > API call > Render
+2= load > Render > API > Rerender( mostly used better approach )
