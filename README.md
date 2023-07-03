@@ -50,3 +50,11 @@ very big project earlier use this method
 
 1= load > API call > Render
 2= load > Render > API > Rerender( mostly used better approach )
+
+# shimmer UI
+
+it is used to show the dummy content before loading the actual data.
+
+# conditional rendering
+
+rendering on the basis of condition ex- showing shimmer ui before get the resulta from API results.

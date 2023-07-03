@@ -1,6 +1,6 @@
 import RestaurantCard from "./RestauranCard";
 import { useEffect, useState } from "react";
-import resObj from "../Utils/mockdata";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -17,12 +17,17 @@ const Body = () => {
     console.log(json);
     setListOfRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   };
-  return (
+
+  return listOfRestaurants.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <button
         className="filter-btn"
         onClick={() => {
-          const filterdList = resObj.filter((res) => res.data.avgRating > 4);
+          const filterdList = listOfRestaurants.filter(
+            (res) => res.data.avgRating > 4
+          );
           setListOfRestaurants(filterdList);
           listdata = filterdList;
         }}
